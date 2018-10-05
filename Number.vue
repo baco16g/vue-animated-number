@@ -1,5 +1,5 @@
 <template>
-    <span v-on="$listeners" v-bind="$attrs">{{ tweenedNumber }}</span>
+    <span v-on="$listeners" v-bind="$attrs" v-html="tweenedNumber"></span>
 </template>
 
 <script>
@@ -38,7 +38,7 @@ export default {
     animationPaused: Boolean // Stops animation before start
   },
   data() {
-    return { 
+    return {
       fromProp: this.from
     }
   },
