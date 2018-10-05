@@ -8,7 +8,7 @@ import {TweenLite} from 'gsap'
 const countFullstops = (str) => str.replace(/[^.]/g, '').length
 
 export default {
-  name: 'number',
+  name: 'vue-animated-number',
   props: {
     from: {
       type: [Number, String],
